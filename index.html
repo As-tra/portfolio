@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,700;0,800;1,200;1,300;1,400&family=Ubuntu:wght@500&family=Work+Sans:ital,wght@0,600;0,800;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <h1>Assil</h1>
+            </a>
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('.toggle-menu').click(function(){
+                        $('.toggle-menu').toggleClass('active')
+                    })
+                })
+            </script>
+        </div>
+    </header>
+    <section class="main" id="Home">
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <div class="content">
+            <div class="image-container">
+                <img src="images/main.png" alt="">
+            </div>
+            <div class="info">
+                <h2>I'm Assil Mathlouthi</h2>
+                <h1>Python & Flutter Developer</h1>
+                <h3>I Transform Ideas into Mobile Reality</h3>                
+            <a href="#projects" class="btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/assil-mathlouthi-937773240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/As-tra" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                <a href="#discord"><i class="fa-brands fa-discord" ></i></a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <article>
+            <div class="skills-wrapper">
+                <div class="skill-item">
+                    <img src="images/python.svg" alt="python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/flutter.svg" alt="flutter">
+                    <p>Flutter</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/dart.svg" alt="dart">
+                    <p>Dart</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/firebase.svg" alt="firebase">
+                    <p>Firebase</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/postgresql-svgrepo-com.svg" alt="postgresql">
+                    <p>Postgresql</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/flask.svg" alt="Flask">
+                    <p>Flask</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <article class="work">
+            <div class="project-item">
+                <div class="img-wrapper">
+                    <img src="images/forsa.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Forsa+</h2>
+                    <h3>Job Finder Application</h3>
+                    <p>
+                        Forsa+ is an innovative mobile application designed to efficiently connect job seekers and recruiters in the IT field.
+                        It aims to simplify the recruitment process by offering a personalized experience for candidates and optimization tools for recruiters.
+                        In this presentation, we will detail the design, key features and technological choices that make Forsa+ unique.
+                    </p>
+                    <div class="tags">
+                        <p>Flutter</p>
+                        <p>Flask</p>
+                        <p>Supabase</p>
+                        <p>Scrapy</p>
+                    </div>
+                    <div class="button">
+                        Request a Demo
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="img-wrapper">
+                    <img src="images/ticgo.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Ticgo</h2>
+                    <h3>Ticket Booking Application</h3>
+                    <p>
+                        Ticgo is a convenient ticket booking app for users in Côte d’Ivoire, allowing seamless online bus ticket reservations with secure payment options. The app provides digital receipts and QR codes for easy check-in, supports both account creation and guest mode for flexibility, and offers light and dark themes for a personalized user experience. Ticgo simplifies travel planning and makes commuting hassle-free.
+                    </p>
+                    <div class="tags">
+                        <p>Flutter</p>
+                        <p>Dart</p>
+                        <p>REST API</p>
+                        <p>Google Maps</p>
+                    </div>
+                    <div class="button">
+                        Request a Demo
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="img-wrapper">
+                    <img src="images/memomate.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Memo Mate</h2>
+                    <h3>Advanced offline note app</h3>
+                    <p>
+                        Memo Mate is an advanced offline note-taking app designed for a sleek and elegant experience. It allows users to create private notes secured with PIN codes, add images, voice notes, categories, and tags, and organize their notes with various filters and options. Memo Mate offers everything needed for an enhanced and versatile note-taking experience.
+                    </p>
+                    <div class="tags">
+                        <p>Flutter</p>
+                        <p>Hive</p>
+                        <p>dart</p>
+                    </div>
+                    <div class="button">
+                        Request a Demo
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="img-wrapper">
+                    <img src="images/digital_invocing.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>InvoiceEase</h2>
+                    <h3>Digital Invoicing Application</h3>
+                    <p>
+                        InvoiceEase is a streamlined digital invoicing application designed to simplify billing and payment processes. It allows users to create and send professional invoices, track payments, manage clients, and generate detailed reports. With built-in graphs, filters, and the option to print receipts, InvoiceEase offers an intuitive and efficient solution for businesses and freelancers alike.
+                    </p>
+                    <div class="tags">
+                        <p>Flutter</p>
+                        <p>dart</p>
+                    </div>
+                    <div class="button">
+                        Request a Demo
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="Contact">
+        <h1>Contact info</h1>
+        <div>
+            <div class="outer">
+                <img src="images/email.svg" alt="">
+            </div>
+            <h3>assil.mathlouthi@etudiant-isi.utm.tn</h3>
+        </div>
+        <div>
+            <div class="outer">
+                <img src="images/upwork.svg" alt="">
+            </div>
+            <h3>Assil Mathlouthi</h3>
+        </div>
+        <div>
+            <div class="outer">
+                <img src="images/discord.svg" alt="" id="discord">
+            </div>
+            <h3>Astra#6175</h3>
+        </div>
+    </section>
+    <div class="hh">
+        <label>
+            <input type="radio" name="h">
+            <div class="face"></div>
+        </label>
+        <label>
+            <input type="radio" name="h">
+            <div class="face"></div>
+        </label>        
+    </div>
+    <footer>
+        <h3>2024&copy;Assil</h3>
+    </footer>
+</body>
+</html>
