@@ -172,6 +172,7 @@ header .form i{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px;
 }
 .main .content h2 ,.main .content h3{
     color: white;
@@ -184,7 +185,7 @@ header .form i{
     font-size: 25px;
     text-decoration: none;
     padding: 15px;
-    margin: 20% 0;
+    margin: 16px 0;
     display: inline-block;
     color: var(--main);
     border: 2px solid transparent;
@@ -379,11 +380,18 @@ header .form i{
     background-position: 100%;
 }
 @media (max-width:786px) {
+    #projects .project-item h2 {
+        font-size: 28px;
+    }
+    #projects .project-item h3 {
+        font-size: 20px;
+    }
     #projects .project-item .button {
         width: 100%;
     }
     #projects .project-item .tags p {
         margin-top: 12px;
+        font-size: 16px;
     }
     #projects .project-item {
         width: 100%;
